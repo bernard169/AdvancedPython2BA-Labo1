@@ -10,9 +10,15 @@ def fact(n):
     Post: Returns the factorial of 'n'.
     Throws: ValueError if n < 0
     """
-
+    if n < 0:
+        raise ValueError 
+    result = 1
+    while n > 0 :
+        result *= n
+        n -= 1
+    return result
 def roots(a, b, c):
-    """Computes the roots of the ax^2 + bx + x = 0 polynomial.
+    """Computes the roots of the ax^2 + bx + c = 0 polynomial.
     
     Pre: -
     Post: Returns a tuple with zero, one or two elements corresponding

@@ -4,19 +4,18 @@
 
 import unittest
 import utils
+import math
 
 class TestUtils(unittest.TestCase):
     def test_fact(self):
-        # À compléter...
-        pass
-    
+        self.assertEqual (utils.fact(4),24)
+
     def test_roots(self):
         # À compléter...
         pass
     
     def test_integrate(self):
-        # À compléter...
-        pass
+        self.assertEqual (utils.integrate ("x**2 - 1",2,4), 50/3) 
 
 if __name__ == '__main__':
     suite = unittest.TestLoader().loadTestsFromTestCase(TestUtils)
