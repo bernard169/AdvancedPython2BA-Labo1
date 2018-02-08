@@ -3,7 +3,6 @@
 # Author: Sébastien Combéfis
 # Version: February 8, 2018
 
-import re
 import math 
 
 def fact(n):
@@ -37,7 +36,7 @@ def roots(a, b, c):
         return ((-b+math.sqrt(delta))/(2*a), (-b-math.sqrt(delta))/(2*a)) 
 def f(x):
     """
-    Used only for the integrate function, as an argument"
+    Used only for the 'integrate' function, as an argument"
     """
     return x
 
